@@ -35,7 +35,7 @@ public class SimpleResponse {
 			}else{
 				String error = "HTTP/1.1 404 File Not Fount\r\n" + 
 								"Content-Type: text/html\r\n" +
-								"Content-Length: 23\r\n" + "\r\n" +
+								"Content-Length: 23\r\n" + "\r\n" + //尼玛 没加这个空格 调试尼玛半天
 								"<h1>File Not Found</h1>";
 				outputStream.write(error.getBytes());
 			}
